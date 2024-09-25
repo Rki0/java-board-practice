@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: idontknow
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/idontknow?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: pksy1228@@bb
+  thymeleaf:
+    cache: false
+
+  jpa:
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
